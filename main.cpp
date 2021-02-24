@@ -1,8 +1,9 @@
 #include <cmath>
 #include "QRegister.h"
+#include "CNF.h"
 #define sqrt2 M_SQRT2f64;
 
-void solve(const std::vector< std::vector<int> >& cnf, uint32_t v_num){
+void solve(const std::vector< std::vector<int32_t> >& cnf, uint32_t v_num){
     uint32_t reg_size = cnf.size() + v_num;
 
     std::vector< std::vector<uint32_t> > cnf_neg;
@@ -68,7 +69,10 @@ void solve(const std::vector< std::vector<int> >& cnf, uint32_t v_num){
 }
 
 
+
+
+
 int main(){
-    std::vector< std::vector<int> > cnf = {{2,3,-1},{-1,4,-3},{1,2,4},{1,-3,-2},{-3,-4,-2},{2,-1,3},{-4}};
-    solve(cnf,4);
+    CNF cnf = CNF("a.dimacs");
+    solve(cnf.data, cnf.var_num);
 }
