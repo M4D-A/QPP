@@ -39,6 +39,38 @@ CNF::CNF(const std::string& filename){
     cnf_file.close();
 }
 
+CNF::CNF(uint32_t k, uint32_t v, uint32_t c) {
+    var_num = v;
+    cls_num = c;
+
+    std::vector<uint32_t> base = std::vector<uint32_t>(v);
+    for(uint32_t i = 0; i < v; i++){
+        base[i] = i+1;
+    }
+
+    for(uint32_t n = 0; n < c; n++){
+        for(uint32_t i = v-1; i >= 1; --i){
+            uint32_t j = rand() % (i+1);
+            uint32_t temp = base[i];
+            base[i] = base[j];
+            base[j] = temp;
+        }
+
+        for(auto l : base){
+            std::cout<<l<<" ";
+        }
+        std::cout<<std::endl;
+        std::vector<int32_t> clause;
+        for(uint32_t i = 0; i < k; i++) {
+            int32_t literal = rand()%2 ? base[i] : -base[i];
+            clause.push_back(literal);
+        }
+        data.push_back(clause);
+    }
+
+    std::cout<<std::endl;
+}
+
 void CNF::print(){
     for(const auto& clause : data){
         for(auto literal : clause){
@@ -47,3 +79,4 @@ void CNF::print(){
         std::cout << std::endl;
     }
 }
+

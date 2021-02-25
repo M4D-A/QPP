@@ -16,6 +16,7 @@ public:
     uint32_t var_num;
     uint32_t cls_num;
     explicit CNF(const std::string& filename);
+    CNF(uint32_t k, uint32_t v, uint32_t c);
     void print();
 };
 

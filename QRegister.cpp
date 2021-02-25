@@ -29,6 +29,12 @@ void QRegister::print(){
     }
 }
 
+void QRegister::print(uint32_t n){
+    for(uint32_t i = 0; i < n; i++){
+        std::cout << "|" << i << ">  = " << qreg[i] << " :: " << std::abs(qreg[i])*std::abs(qreg[i]) <<std::endl;
+    }
+}
+
 
 
 void QRegister::nott(uint32_t n){

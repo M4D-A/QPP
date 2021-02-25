@@ -27,6 +27,7 @@ public:
     void set(uint32_t n);
     void test_fill();
     void print();
+    void print(uint32_t n);
 
     void nott(uint32_t n);
     void nott(const std::vector<uint32_t>& N);
@@ -58,6 +59,8 @@ public:
     void cphase(const std::vector<uint32_t>& N, double phi);
 
     void grover(const std::vector<uint32_t>& N);
+
+
 };
 
 

@@ -70,5 +70,5 @@ void QSolver::solve(){
 
     reg.grover(v_indices);
 
-    reg.print();
+    reg.print(1u<<cnf->var_num);
 }
