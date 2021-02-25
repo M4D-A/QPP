@@ -49,23 +49,19 @@ void QSolver::solve(){
     reg.had(v_indices);
 
     for(uint32_t i = 0; i<cnf->data.size(); i++){
-        reg.nott(cnf_neg[i]);
-        reg.nott(cnf_abs[i]);
+        reg.nott(cnf_pos[i]);
         reg.ccnot(cnf_abs[i], cnf->var_num + i);
         reg.nott(cnf->var_num + i);
-        reg.nott(cnf_abs[i]);
-        reg.nott(cnf_neg[i]);
+        reg.nott(cnf_pos[i]);
     }
 
     reg.crotZ(c_indices);
 
     for(uint32_t i = 0; i<cnf->data.size(); i++){
-        reg.nott(cnf_neg[i]);
-        reg.nott(cnf_abs[i]);
+        reg.nott(cnf_pos[i]);
         reg.nott(cnf->var_num + i);
         reg.ccnot(cnf_abs[i], cnf->var_num + i);
-        reg.nott(cnf_abs[i]);
-        reg.nott(cnf_neg[i]);
+        reg.nott(cnf_pos[i]);
     }
 
     reg.grover(v_indices);

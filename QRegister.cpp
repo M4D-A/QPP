@@ -52,10 +52,27 @@ void QRegister::nott(uint32_t n){
 }
 
 void QRegister::nott(const std::vector<uint32_t>& N){
+    uint32_t mask = 0u;
     for(uint32_t n : N){
-        nott(n);
+        uint32_t temp_mask = 1u<<n;
+        mask |= temp_mask;
+    }
+    std::vector<bool> swapped = std::vector<bool>(states_num, false);
+    std::complex<double> swap;
+    uint32_t noti;
+    for(uint32_t i = 0; i < states_num; i++){
+        if(!swapped[i]){
+            noti = i^mask;
+            swap = qreg[i];
+            qreg[i] = qreg[noti];
+            qreg[noti] = swap;
+            swapped[i] = true;
+            swapped[noti] = true;
+        }
     }
 }
+
+
 
 
 void QRegister::cnot(uint32_t c, uint32_t n){

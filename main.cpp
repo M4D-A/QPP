@@ -1,4 +1,3 @@
-#include <cmath>
 #include "QSolver.h"
 #include "CNF.h"
 
