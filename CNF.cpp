@@ -56,10 +56,6 @@ CNF::CNF(uint32_t k, uint32_t v, uint32_t c) {
             base[j] = temp;
         }
 
-        for(auto l : base){
-            std::cout<<l<<" ";
-        }
-        std::cout<<std::endl;
         std::vector<int32_t> clause;
         for(uint32_t i = 0; i < k; i++) {
             int32_t literal = rand()%2 ? base[i] : -base[i];
@@ -67,8 +63,6 @@ CNF::CNF(uint32_t k, uint32_t v, uint32_t c) {
         }
         data.push_back(clause);
     }
-
-    std::cout<<std::endl;
 }
 
 void CNF::print(){
