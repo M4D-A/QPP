@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="QPP"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/adam/Desktop/mgr/ATTACHMENTS/QPP"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/adam/Desktop/mgr/ATTACHMENTS/QPP"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/adam/Desktop/mgr/ATTACHMENTS/QPP"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="QPP">
+				<Option output="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/QPP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adam/Desktop/mgr/ATTACHMENTS/QPP"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 QPP"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="QPP/fast">
+				<Option output="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/QPP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adam/Desktop/mgr/ATTACHMENTS/QPP"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 QPP/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/adam/Desktop/mgr/ATTACHMENTS/QPP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/CNF.cpp">
+			<Option target="QPP"/>
+		</Unit>
+		<Unit filename="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/CNF.h">
+			<Option target="QPP"/>
+		</Unit>
+		<Unit filename="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/QRegister.cpp">
+			<Option target="QPP"/>
+		</Unit>
+		<Unit filename="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/QRegister.h">
+			<Option target="QPP"/>
+		</Unit>
+		<Unit filename="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/QSolver.cpp">
+			<Option target="QPP"/>
+		</Unit>
+		<Unit filename="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/QSolver.h">
+			<Option target="QPP"/>
+		</Unit>
+		<Unit filename="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/main.cpp">
+			<Option target="QPP"/>
+		</Unit>
+		<Unit filename="/home/adam/Desktop/mgr/ATTACHMENTS/QPP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

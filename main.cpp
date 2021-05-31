@@ -28,6 +28,5 @@ int main(int argc, char** argv){
         std::cout<<"s UNDETERMINED"<<std::endl;
     }
     std::cout << "c" << std::endl;
-    std::cout << "c Time elaped: " << (time(NULL) - start_time) << std::endl;
+    std::cout << "c Time elapsed: " << (time(NULL) - start_time) << std::endl;
 }
-
